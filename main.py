@@ -3,9 +3,9 @@ import glob
 
 walk_dir = sys.argv[1]
 
-condition = "coverlet.collector"
-replace = 'Version="1.0.1"'
-value = 'Version="1.0.2"'
+condition = sys.argv[2]
+replace = sys.argv[3]
+value = sys.argv[4]
 
 print('walk_dir = ' + walk_dir)
 print()
